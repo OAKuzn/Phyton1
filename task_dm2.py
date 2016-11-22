@@ -1,8 +1,10 @@
 from drawman import *
 from time import sleep
-A= [(0,0), (100,0), (100,100), (0,100),(0,0)]
+def f(x):
+    return x*x
+
 pen_down()
-for x, y in A:
-    to_point(x,y)
+for x in range(-11,11):
+    to_point(x,f(x))
 pen_up()
 sleep(5)
