@@ -28,6 +28,7 @@ def to_point(x, y):
     global x_current, y_current
     x_current = x
     y_current = y
+    t.goto(x_current, y_current)
 
 init_drawman()
 if __name__ == '__main__':
